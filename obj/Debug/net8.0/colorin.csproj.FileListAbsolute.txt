@@ -1029,3 +1029,4 @@ C:\Users\The Manuel\Documents\Progrmacion web\colorin\colorin\obj\Debug\net8.0\c
 C:\Users\The Manuel\Documents\Progrmacion web\colorin\colorin\obj\Debug\net8.0\refint\colorin.dll
 C:\Users\The Manuel\Documents\Progrmacion web\colorin\colorin\obj\Debug\net8.0\colorin.pdb
 C:\Users\The Manuel\Documents\Progrmacion web\colorin\colorin\obj\Debug\net8.0\ref\colorin.dll
+C:\Users\The Manuel\Documents\Progrmacion web\colorin\colorin\obj\Debug\net8.0\colorin.sourcelink.json
