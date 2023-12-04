@@ -6,11 +6,12 @@
 
  <div class="text-center">
                         
-
-                   
-                    <div class="mb-3">
-                        <label for="cedula" class="form-label">Cedulas</label>
-                        <input @bind-value="Modelo.Cedula" type="text" class="form-control" id="cedula" required>
+                 
+                 
+                    <div class=" form-floating ">
+                       
+                        <input @bind-value="Modelo.Cedula" type="text" class="form-control"   id="floatingPassword" placeholder="Cedula" required>
+                         <label for="floatingPassword" > Ingresa la cedula </label>
                     </div>
                     @if (MensajeErrorCedula != ""){
                         <div class="alert alert-danger" role="alert">
@@ -35,9 +36,10 @@
                             }
                         </style>
                              <div class="CentrarImput">
-                               <div class="col-md-6">
-            <label>Telefono</label>
-            <input type="tel" @bind-value="Modelo.Telefono" class="form-control" required>
+                               <div class="form-floating mb-6">
+          
+            <input type="tel" @bind-value="Modelo.Telefono"  id="floatingtel" class="form-control" placeholder="Telefono" required>
+            <label for="floatingtel">Telefono</label>
         </div>
         </div>
                     <br>
