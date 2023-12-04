@@ -65,6 +65,10 @@
               "target": "Package",
               "version": "[8.0.0, )",
               "autoReferenced": true
+            },
+            "newtonsoft.json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
             }
           },
           "imports": [

@@ -1,0 +1,143 @@
+@using colorin.Models;
+ 
+
+<div class="row">
+
+
+ <div class="text-center">
+                        
+
+                   
+                    <div class="mb-3">
+                        <label for="cedula" class="form-label">Cedulas</label>
+                        <input @bind-value="Modelo.Cedula" type="text" class="form-control" id="cedula" required>
+                    </div>
+                    @if (MensajeErrorCedula != ""){
+                        <div class="alert alert-danger" role="alert">
+                            @MensajeErrorCedula
+                        </div>
+                    }
+                         <div class="row">
+                           <div class="col-md-6">
+                            <label>Nombre</label>
+                            <div  class="form-control">@Modelo.Nombre </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label>Apellido</label>
+                            <div  class="form-control">@Modelo.Apellido </div>
+                        </div> 
+
+                        <style>
+                            .CentrarImput{
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                            }
+                        </style>
+                             <div class="CentrarImput">
+                               <div class="col-md-6">
+            <label>Telefono</label>
+            <input type="tel" @bind-value="Modelo.Telefono" class="form-control" required>
+        </div>
+        </div>
+                    <br>
+                    <br>
+                    <br>
+                    
+            </div>
+                                     <div class="d-grid gap-2 text-center">
+            <button @onclick="validar" type="button" class="btn  mx-auto @colorBoton " style="max-width: 200px;">
+                <i class="@ObtenerClaseIcono()"></i> Validar
+            </button>
+        </div>
+
+                </div>
+                  </div>
+     
+     
+
+@code{
+    string MensajeErrorCedula = "";
+    string colorBoton = "btn-primary";
+    bool IconoValidacion = true;
+  
+    
+string ObtenerClaseIcono()
+{
+    if (colorBoton == "btn-danger")
+    {
+        // Si el botón es rojo (error), devolvemos el icono de error
+        return "fas fa-exclamation-circle";
+    }
+    else
+    {
+        // Si el botón es verde (éxito), devolvemos el icono de éxito
+        return IconoValidacion ? "fa-check fa-thumbs-up" : "fas fa-check";
+    }
+}
+
+async Task validar()
+{
+    Persona instancia  = new Persona ();
+    Modelo.Cedula = Modelo.Cedula.Replace("-", "");
+    if (string.IsNullOrWhiteSpace(Modelo.Cedula))
+    {
+        // El usuario presionó Enter con el campo en blanco
+        MensajeErrorCedula = "Ingrese una cedula válida";
+        return;
+    }
+    else if (!Modelo.Cedula.All(char.IsDigit))
+    {
+        // La entrada contiene caracteres que no son números
+        MensajeErrorCedula = "La cedula solo debe contener números";
+        return;
+    }
+    else if (Modelo.Cedula.Length != 11)
+    {
+    MensajeErrorCedula= "La cedula debe tener 11 digitos";
+    return;
+    }
+    
+    
+ var ulr= "https://api.adamix.net/apec/cedula/"+Modelo.Cedula;
+
+ var http = new HttpClient();   
+  var respuesta = await http.GetAsync(ulr);
+
+    if(respuesta.IsSuccessStatusCode)
+    {
+        var json = await respuesta.Content.ReadAsStringAsync();
+ var persona = Newtonsoft.Json.JsonConvert.DeserializeObject<PersonaJCE>(json);
+        if(persona.ok){
+          Modelo.Nombre = persona.Nombres;
+          Modelo.Apellido= persona.Apellido1+ " " + persona.Apellido2;
+         
+          colorBoton= "btn-success";
+          IconoValidacion = !IconoValidacion; 
+          //
+         
+           StateHasChanged();
+        
+        }
+        else 
+        {
+           MensajeErrorCedula = "Cedula no encontrada";  
+           colorBoton= "btn-danger"; //cambia el color del boton a rojo
+           IconoValidacion = false;
+           return;
+        }
+    }
+    else
+    {
+        MensajeErrorCedula = "Error en la consulta";
+        colorBoton= "btn-danger";//cambia el color del boton a rojo
+        IconoValidacion = false;
+        return;
+    }
+}
+
+    [Parameter]
+
+
+    public  Persona Modelo{get;set;} = new Persona();
+}
