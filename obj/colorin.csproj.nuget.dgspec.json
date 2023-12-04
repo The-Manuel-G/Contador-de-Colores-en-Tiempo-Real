@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\The Manuel\\Documents\\Progrmacion web\\colorin\\colorin\\colorin.csproj": {}
+    "C:\\Users\\The Manuel\\Documents\\Progrmacion_web\\colorin\\colorin\\colorin.csproj": {}
   },
   "projects": {
-    "C:\\Users\\The Manuel\\Documents\\Progrmacion web\\colorin\\colorin\\colorin.csproj": {
+    "C:\\Users\\The Manuel\\Documents\\Progrmacion_web\\colorin\\colorin\\colorin.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\The Manuel\\Documents\\Progrmacion web\\colorin\\colorin\\colorin.csproj",
+        "projectUniqueName": "C:\\Users\\The Manuel\\Documents\\Progrmacion_web\\colorin\\colorin\\colorin.csproj",
         "projectName": "colorin",
-        "projectPath": "C:\\Users\\The Manuel\\Documents\\Progrmacion web\\colorin\\colorin\\colorin.csproj",
+        "projectPath": "C:\\Users\\The Manuel\\Documents\\Progrmacion_web\\colorin\\colorin\\colorin.csproj",
         "packagesPath": "C:\\Users\\The Manuel\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\The Manuel\\Documents\\Progrmacion web\\colorin\\colorin\\obj\\",
+        "outputPath": "C:\\Users\\The Manuel\\Documents\\Progrmacion_web\\colorin\\colorin\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

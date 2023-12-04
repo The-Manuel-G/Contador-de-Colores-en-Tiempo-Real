@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/EkM+ZjOzjuIRQ7xzE1J7ZfSPbVJMeb6qeC4fI7TknvdWBqPnj+ENHaSYeSTyJOocbsKNTvvOSJI+EFUX6Wc5g==",
+  "dgSpecHash": "xQuCvKuPVVB0ShhjVf8Fg4NiIxkF0mBW1tl4F/f3CKRHc4hVAQvMG3xb9Ix5hTsrGmElBMbSN3ITm1KnktPwKA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\The Manuel\\Documents\\Progrmacion web\\colorin\\colorin\\colorin.csproj",
+  "projectFilePath": "C:\\Users\\The Manuel\\Documents\\Progrmacion_web\\colorin\\colorin\\colorin.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\The Manuel\\.nuget\\packages\\microsoft.aspnetcore.authorization\\8.0.0\\microsoft.aspnetcore.authorization.8.0.0.nupkg.sha512",
     "C:\\Users\\The Manuel\\.nuget\\packages\\microsoft.aspnetcore.components\\8.0.0\\microsoft.aspnetcore.components.8.0.0.nupkg.sha512",

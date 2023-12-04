@@ -816,8 +816,6 @@ C:\Users\The Manuel\Documents\Progrmacion web\colorin\colorin\obj\Debug\net8.0\s
 C:\Users\The Manuel\Documents\Progrmacion web\colorin\colorin\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.colorin.props
 C:\Users\The Manuel\Documents\Progrmacion web\colorin\colorin\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.colorin.props
 C:\Users\The Manuel\Documents\Progrmacion web\colorin\colorin\obj\Debug\net8.0\staticwebassets.pack.json
-C:\Users\The Manuel\Documents\Progrmacion web\colorin\colorin\obj\Debug\net8.0\scopedcss\Layout\MainLayout.razor.rz.scp.css
-C:\Users\The Manuel\Documents\Progrmacion web\colorin\colorin\obj\Debug\net8.0\scopedcss\Layout\NavMenu.razor.rz.scp.css
 C:\Users\The Manuel\Documents\Progrmacion web\colorin\colorin\obj\Debug\net8.0\scopedcss\bundle\colorin.styles.css
 C:\Users\The Manuel\Documents\Progrmacion web\colorin\colorin\obj\Debug\net8.0\scopedcss\projectbundle\colorin.bundle.scp.css
 C:\Users\The Manuel\Documents\Progrmacion web\colorin\colorin\obj\Debug\net8.0\compressed\on74a64u2k.gz
@@ -1030,3 +1028,5 @@ C:\Users\The Manuel\Documents\Progrmacion web\colorin\colorin\obj\Debug\net8.0\r
 C:\Users\The Manuel\Documents\Progrmacion web\colorin\colorin\obj\Debug\net8.0\colorin.pdb
 C:\Users\The Manuel\Documents\Progrmacion web\colorin\colorin\obj\Debug\net8.0\ref\colorin.dll
 C:\Users\The Manuel\Documents\Progrmacion web\colorin\colorin\obj\Debug\net8.0\colorin.sourcelink.json
+C:\Users\The Manuel\Documents\Progrmacion web\colorin\colorin\obj\Debug\net8.0\scopedcss\Shared\MainLayout.razor.rz.scp.css
+C:\Users\The Manuel\Documents\Progrmacion web\colorin\colorin\obj\Debug\net8.0\scopedcss\Shared\NavMenu.razor.rz.scp.css
