@@ -29,12 +29,12 @@
       "PackagePath": "staticwebassets\\favicon.png"
     },
     {
-      "Id": "C:\\Users\\The Manuel\\Documents\\Progrmacion_web\\colorin\\colorin\\wwwroot\\gobieno.png",
-      "PackagePath": "staticwebassets\\gobieno.png"
-    },
-    {
       "Id": "C:\\Users\\The Manuel\\Documents\\Progrmacion_web\\colorin\\colorin\\wwwroot\\icon-192.png",
       "PackagePath": "staticwebassets\\icon-192.png"
+    },
+    {
+      "Id": "C:\\Users\\The Manuel\\Documents\\Progrmacion_web\\colorin\\colorin\\wwwroot\\images\\gobieno.png",
+      "PackagePath": "staticwebassets\\images\\gobieno.png"
     },
     {
       "Id": "C:\\Users\\The Manuel\\Documents\\Progrmacion_web\\colorin\\colorin\\wwwroot\\index.html",

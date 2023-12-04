@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "CXuEnpdGrfhRrW7Pv68e3vv/biZgUjtzIA1cFw9fbzs=",
+  "Hash": "KkzWV5CVCRAwf7AC7jUoQJjnLWq0UJEswh8oDYxspfY=",
   "Source": "colorin",
   "BasePath": "/",
   "Mode": "Root",
@@ -7921,25 +7921,6 @@
       "OriginalItemSpec": "wwwroot\\favicon.png"
     },
     {
-      "Identity": "C:\\Users\\The Manuel\\Documents\\Progrmacion_web\\colorin\\colorin\\wwwroot\\gobieno.png",
-      "SourceId": "colorin",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\The Manuel\\Documents\\Progrmacion_web\\colorin\\colorin\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "gobieno.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\gobieno.png"
-    },
-    {
       "Identity": "C:\\Users\\The Manuel\\Documents\\Progrmacion_web\\colorin\\colorin\\wwwroot\\icon-192.png",
       "SourceId": "colorin",
       "SourceType": "Discovered",
@@ -7957,6 +7938,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\icon-192.png"
+    },
+    {
+      "Identity": "C:\\Users\\The Manuel\\Documents\\Progrmacion_web\\colorin\\colorin\\wwwroot\\images\\gobieno.png",
+      "SourceId": "colorin",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\The Manuel\\Documents\\Progrmacion_web\\colorin\\colorin\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "images/gobieno.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\gobieno.png"
     },
     {
       "Identity": "C:\\Users\\The Manuel\\Documents\\Progrmacion_web\\colorin\\colorin\\wwwroot\\index.html",
