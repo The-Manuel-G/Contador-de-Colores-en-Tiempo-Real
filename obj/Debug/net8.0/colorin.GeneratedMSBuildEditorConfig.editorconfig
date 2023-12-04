@@ -30,12 +30,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/The Manuel/Documents/Progrmacion_web/colorin/colorin/Pages/Formulario.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRm9ybXVsYXJpby5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/The Manuel/Documents/Progrmacion_web/colorin/colorin/Pages/Home.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/The Manuel/Documents/Progrmacion_web/colorin/colorin/Pages/Weather.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcV2VhdGhlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/The Manuel/Documents/Progrmacion_web/colorin/colorin/Shared/FormLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXEZvcm1MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/The Manuel/Documents/Progrmacion_web/colorin/colorin/Shared/PersonaEdit.razor]
