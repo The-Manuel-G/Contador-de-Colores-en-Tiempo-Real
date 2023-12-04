@@ -1,0 +1,208 @@
+@page "/"
+
+ @using colorin.Models;
+ @inherits LayoutComponentBase
+
+
+
+   
+<EditForm model="intento" OnValidSubmit="EnviarDatos">
+    <DataAnnotationsValidator/>
+    <ValidationSummary/>
+    
+<div class="text-center">
+
+    <img src="imagenes/gobieno.png" alt="Logo de gobieno Dominicano ">
+</div>
+
+    <div class="row">
+                <div>
+                    <h3 class="card-title text-center">Programa de ayuda a los jovenes</h3>
+                    <p class="tex-muted text-center">Digital tu cedula para ser uno de los beneficiados</p>
+                    </div>
+                </div>
+
+
+<div class="row"> 
+    <div>
+        <PersonaEdit Modelo="intento.Persona" />
+    </div>
+</div>
+     @intento.Persona.Nombre
+
+ @if(intento.Persona.Nombre.Length > 2){
+
+
+
+    
+                    <div class="row">
+        <div class="col-md-6">
+            <label>Direccion</label>
+            <input type="text" @bind-value="intento.Direccion" class="form-control">
+        </div>
+        
+    </div>
+                    <div class="mb-3">
+                        <label for="correo" class="form-label">Correo</label>
+                        <input type="email" @bind-value="intento.Correo" class="form-control" id="correo" required>
+                    </div>
+                    <div class="row">
+                        <div class="col col-md-6">
+                         <label>Estado Civil</label>
+                         <select class="form-select" @bind="intento.EstadoCivil">
+                         <option value="">Seleccionar</option>
+                            <option value="Soltero">Soltero</option>
+                            <option value="Casado">Casado</option>
+                            <option value="Divorciado">Divorciado</option>
+                            <option value="Viudo">Viudo</option>
+                            </select>
+
+                        </div>
+
+                        <div class="mb-3">
+            <label>Profesion</label>
+            <input type="text" @bind-value="intento.Profesion " class="form-control" required>
+        </div>
+
+                    </div>
+<br>
+<br>
+<br>
+
+                     <div>
+                    <h3 class="card-title text-center">Agrega a los tus amigos </h3>
+                    <p class="tex-muted text-center">Digital de tus amigos   al referenciarlos estos recibirán 5,000 pesos. </p>
+                    </div>
+
+                   <div>
+                       <table class="table table-striped table-bordered">
+    <thead>
+        <tr>
+            <th ><i class="fa fa-user-friends"></i> Amigos</th>
+            
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var amigo in intento.Amigos)
+        {
+            <tr>
+                <td>
+                    <PersonaEdit Modelo="amigo" />
+                </td>
+                </tr>
+                    
+        }
+    </tbody>
+</table>
+</div>
+<div class="mb-3">
+    <label for="exampleFormControlTextarea1" class="form-label">Escriba su mensaje</label>
+    <InputTextArea @bind-value="intento.Mensaje" class="form-control"id="exampleFormControlTextarea1" rows="3"/>
+</div>
+
+ <div class="d-grid gap-2 text-center">
+                @if(errores.Count > 0)
+                {
+
+                    <div class="alert alert-danger">
+                        <ul>
+                            @foreach (var error in errores)
+                            {
+                                <li>@error</li>
+                            }
+                        </ul>
+                    </div>
+                }
+                        <button  type="submit" class="btn btn-primary mx-auto" style="max-width: 3000px;">   <i class="fas fa-paper-plane"></i> Enviar</button>
+                    </div>
+
+ }
+<style>
+    .table-header {
+        background-color: #007bff;
+        color: white;
+        font-weight: bold;
+    }
+
+    .table-hover tbody tr:hover {
+        background-color: #f5f5f5;
+    }
+
+    .btn-danger {
+        background-color: #dc3545;
+        color: white;
+    }
+
+    .btn-danger:hover {
+        background-color: #c82333;
+        color: white;
+    }
+</style>
+
+                 
+
+               
+                
+
+</EditForm>
+   
+
+
+@code {
+    Aplicacion intento = new Aplicacion();
+List<string> errores = new List<string>();
+
+    protected override void OnInitialized()
+    {
+        intento.Persona = new Persona();
+         @for(int i = 0; i < 5; i++) {
+             intento.Amigos.Add(new Persona ());
+             }
+              
+    }
+
+
+void EnviarDatos(){
+
+    errores.Clear();
+    if(intento.Persona.Nombre.Length < 2){
+        errores.Add("El nombre debe tener al menos 2 caracteres");
+
+    }
+    if(intento.Correo.Length < 2){
+        errores.Add("Debe tener un correo valido");
+
+    }
+    if(intento.Direccion.Length < 5){
+        errores.Add("Debe tener una direccion valida");
+
+    }
+    if(intento.EstadoCivil.Length < 2){
+        errores.Add("Debe tener un estado civil valido");
+
+    }
+    if(intento.Profesion.Length < 2){
+        errores.Add("Debe tener una profesion valida");
+
+    }
+     if(intento.Mensaje.Length < 10){
+        errores.Add("Debe tener un Motivo valido");}
+  //Validar que existen 2 amigos
+  int amigosValidos = 0;
+    foreach(var amigo in intento.Amigos){
+        if(amigo.Nombre.Length > 2){
+            amigosValidos++;
+        }
+    }
+    if(amigosValidos < 2){
+        errores.Add("Debe tener al menos 2 amigos");}
+
+     if(errores.Count > 0){
+         return;
+     }
+    var datos = Newtonsoft.Json.JsonConvert.SerializeObject(intento);
+     
+       Console.WriteLine("Datos enviados");
+    Console.WriteLine(datos);
+}
+}
