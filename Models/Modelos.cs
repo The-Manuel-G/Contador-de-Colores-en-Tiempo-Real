@@ -3,7 +3,8 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
-namespace tarea4.Data;
+namespace colorin.Models;
+
 
 
 public class Persona {  
