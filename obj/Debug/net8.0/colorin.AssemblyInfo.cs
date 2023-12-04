@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("colorin")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+91b6ea9113c3107c0639df4bc1c91372847db271")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bdb1ac932f5442735767baa0d1e007049a5e8b6b")]
 [assembly: System.Reflection.AssemblyProductAttribute("colorin")]
 [assembly: System.Reflection.AssemblyTitleAttribute("colorin")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
