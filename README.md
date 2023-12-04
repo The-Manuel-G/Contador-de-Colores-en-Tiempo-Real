@@ -1,4 +1,4 @@
-#Proyecto: Sistema de Registro para el Bono de Ayuda
+# Proyecto: Sistema de Registro para el Bono de Ayuda
 
 Descripción General:
 El proyecto "Bono Ayuda" se centra en facilitar el proceso de registro y distribución de bonos de ayuda económica proporcionados por el gobierno dominicano. La iniciativa busca llegar a estudiantes y personas con habilidades diversas que requieren asistencia financiera.
